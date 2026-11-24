@@ -7,6 +7,10 @@ A small, production-shaped chatbot that answers questions **only from your own d
 - **Keeps working when the model is down:** falls back to showing the best-matching section.
 - **Simple to extend:** drop `.md`/`.txt` files in `docs/` and call `POST /api/reload`.
 
+![Chatbot answering a returns question with a cited source](docs/img/screenshot.png)
+
+Tip: link straight to a question with `/?q=your+question`.
+
 
 ## Run it
 

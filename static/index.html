@@ -65,6 +65,9 @@ async function ask() {
   finally { b.disabled = false; q.focus(); }
 }
 document.getElementById('f').onsubmit = e => { e.preventDefault(); ask(); };
+// Shareable links: /?q=your+question asks it on load.
+const preset = new URLSearchParams(location.search).get('q');
+if (preset) { q.value = preset; ask(); }
 </script>
 </body>
 </html>
